@@ -1,0 +1,34 @@
+[
+  {
+    "ID": 8,
+    "Pergunta": "Qual o link da BlueShift Brasil nas redes sociais ? ",
+    "Resposta": "A BlueShift está presente em diversas redes sociais e você pode conhecer e acompanhar as novidades através dos links: Site: https://blueshift.com.br/ Linkedin: https://www.linkedin.com/company/blueshift-brasil Instagram: https://www.instagram.com/blueshift_br/ Youtube: https://www.youtube.com/blueshiftbrasil",
+    "Versão": 3,
+    "Status": "Ativo",
+    "Data de criação": "24/09/2024"
+  },
+  {
+    "ID": 9,
+    "Pergunta": "Apresentação da BlueShift Brasil ",
+    "Resposta": "A BlueShift é uma empresa especializada em serviços e soluções de Big Data & Analytics e RPA e seu diferencial é reunir sólida experiência, conhecimento atualizado e capacidade de entrega para suportar a estratégia de transformação digital de seus parceiros de negócios.  Desde sua fundação em 2012, o propósito da BlueShift é oferecer as melhores e mais inovadoras soluções, colocando a tecnologia da Ciência de Dados no centro das estratégias para impulsionar os resultados e a produtividade através da melhoria do desempenho de nossos clientes de diversos portes e setores.",
+    "Versão": 1,
+    "Status": "Ativo",
+    "Data de criação": "24/09/2024"
+  },
+  {
+    "ID": 10,
+    "Pergunta": " Como funciona as horas adicionais? ",
+    "Resposta": " Antes da realização de horas adicionais é obrigatório a aprovação do cliente ou do responsável da área onde está inserido. Se aprovadas as horas devem serapontadas no Portal do Fornecedor, comtemplando o horario de inicio e fim da hora realizada.  Recomendamos que o consultor respeite o horário do cliente, adaptando-se às normas vigentes. A quantidade de horas estabelecidas normalmente são 8hrs diárias considerando sempre os dias úteis do mês.",
+    "Versão": 1,
+    "Status": "Ativo",
+    "Data de criação": "25/09/2024"
+  },
+  {
+    "ID": 11,
+    "Pergunta": "Como deve ser feito o registro de horas no Portal do Fornecedor?",
+    "Resposta": "O registro deve ser diário e refletir as horas de serviço efetivamente prestadas.  Por exemplo -  Primeiro lançamento 09:00 - 12:00 / Segundo lançamento 13:00 - 18:00",
+    "Versão": 2,
+    "Status": "Ativo",
+    "Data de criação": "25/09/2024"
+  }
+]

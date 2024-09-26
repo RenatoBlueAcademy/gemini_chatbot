@@ -1,0 +1,36 @@
+steps:
+
+- name: "gcr.io/cloud-builders/docker"
+  args: ["build", "-t", "gemini-streamlit-app:$SHORT_SHA", "."]
+
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['tag', 'gemini-streamlit-app:$SHORT_SHA', 'us-east1-docker.pkg.dev/${PROJECT_ID}/ar-chatbotrh/gemini-streamlit-app:$SHORT_SHA']
+
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'us-east1-docker.pkg.dev/${PROJECT_ID}/ar-chatbotrh/gemini-streamlit-app:$SHORT_SHA']
+
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: gcloud
+  args:
+  - 'run'
+  - 'deploy'
+  - 'gemini-streamlit-service'
+  - '--image'
+  - 'us-east1-docker.pkg.dev/${PROJECT_ID}/ar-chatbotrh/gemini-streamlit-app:$SHORT_SHA'
+  - '--region'
+  - 'us-east1'
+  - '--platform'
+  - 'managed'
+  - '--allow-unauthenticated'
+
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['tag', 
+         'us-east1-docker.pkg.dev/${PROJECT_ID}/ar-chatbotrh/gemini-streamlit-app:$SHORT_SHA',
+         'us-east1-docker.pkg.dev/${PROJECT_ID}/ar-chatbotrh/gemini-streamlit-app:latest']
+
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'us-east1-docker.pkg.dev/${PROJECT_ID}/ar-chatbotrh/gemini-streamlit-app:latest']
+
+images:
+- 'us-east1-docker.pkg.dev/${PROJECT_ID}/ar-chatbotrh/gemini-streamlit-app:$SHORT_SHA'
+- 'us-east1-docker.pkg.dev/${PROJECT_ID}/ar-chatbotrh/gemini-streamlit-app:latest'

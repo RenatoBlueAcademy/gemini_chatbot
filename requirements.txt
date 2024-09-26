@@ -1,0 +1,13 @@
+streamlit
+streamlit-float
+python-dotenv
+google-generativeai
+google-cloud-secret-manager
+extra_streamlit_components==0.1.71
+tiktoken
+langchain-chroma
+langchain-community
+langchain-google-genai
+langchain-google-vertexai
+openpyxl
+streamlit-feedback
