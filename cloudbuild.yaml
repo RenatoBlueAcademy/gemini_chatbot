@@ -25,6 +25,8 @@ steps:
   - '--platform'
   - 'managed'
   - '--allow-unauthenticated'
+  - '--update-secrets'
+  - 'GEMINI_API_KEY=GEMINI_API_KEY:latest'
 
 - name: "gcr.io/cloud-builders/docker:latest"
   args: ['tag', 
