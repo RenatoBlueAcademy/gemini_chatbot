@@ -12,7 +12,6 @@ COPY src/ /app/src
 COPY ui/ /app/ui
 COPY qa_database.json .
 COPY Main.py .
-COPY .env .
 
 RUN chmod +x /app/Main.py
 
